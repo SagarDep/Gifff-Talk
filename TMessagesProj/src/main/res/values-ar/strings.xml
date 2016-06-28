@@ -3,8 +3,8 @@
 <!--Translation by Khalid Alaraifi-->
 
 <resources>
-    <string name="AppName">تيليجرام</string>
-    <string name="AppNameBeta">نسخة تيليجرام التجريبية</string>
+    <string name="AppName">اف نقاش</string>
+    <string name="AppNameBeta">اف نقاش</string>
     <string name="LanguageName">العربية</string>
     <string name="LanguageNameInEnglish">Arabic</string>
     <string name="LanguageCode">ar</string>
