@@ -540,6 +540,26 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         textFieldContainer.addView(frameLayout, LayoutHelper.createLinear(0, LayoutHelper.WRAP_CONTENT, 1.0f));
 
         emojiButton = new ImageView(context);
+        emojiButton.setImageResource(R.drawable.ic_smiles_gif);
+        emojiButton.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        emojiButton.setPadding(0, AndroidUtilities.dp(1), 0, 0);
+        if (Build.VERSION.SDK_INT >= 21) {
+            emojiButton.setBackgroundDrawable(Theme.createBarSelectorDrawable(Theme.INPUT_FIELD_SELECTOR_COLOR));
+        }
+        frameLayout.addView(emojiButton, LayoutHelper.createFrame(48, 48, Gravity.BOTTOM | Gravity.LEFT, 3, 0, 0, 0));
+        emojiButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (messageEditText.getText().toString().contains("@gif ")) {
+                    messageEditText.setText(messageEditText.getText().toString().replace("@gif ", ""));
+                } else {
+                    addGifToInputField();
+                }
+            }
+        });
+        /*
+        Customized by Digant
+        emojiButton = new ImageView(context);
         emojiButton.setImageResource(R.drawable.ic_msg_panel_smiles);
         emojiButton.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         emojiButton.setPadding(0, AndroidUtilities.dp(1), 0, 0);
@@ -558,7 +578,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                 }
             }
         });
-
+        */
         messageEditText = new EditTextCaption(context);
         updateFieldHint();
         messageEditText.setImeOptions(EditorInfo.IME_FLAG_NO_EXTRACT_UI);
@@ -619,12 +639,14 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                 return false;
             }
         });
+
         messageEditText.addTextChangedListener(new TextWatcher() {
             boolean processChange = false;
+            CharSequence base = "";
 
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
+                base = charSequence;
             }
 
             @Override
@@ -676,6 +698,12 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                     }
                     Emoji.replaceEmoji(editable, messageEditText.getPaint().getFontMetricsInt(), AndroidUtilities.dp(20), false);
                     processChange = false;
+                }
+                /* Custom Code by Digant */
+                if(base.toString().equals("@gif")){
+                    messageEditText.setText("@gif ");
+                    base = "";
+                    messageEditText.setSelection(messageEditText.getText().length());
                 }
             }
         });
@@ -1264,7 +1292,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         }
         if (isChannel) {
             if (editingMessageObject != null) {
-                messageEditText.setHint(editingCaption ? LocaleController.getString("Caption", R.string.Caption) : LocaleController.getString("TypeMessage", R.string.TypeMessage));
+                messageEditText.setHint(editingCaption ? LocaleController.getString("Caption", R.string.Caption) : LocaleController.getString("TypeMessage", R.string.GifMessage));
             } else {
                 if (silent) {
                     messageEditText.setHint(LocaleController.getString("ChannelSilentBroadcast", R.string.ChannelSilentBroadcast));
@@ -1273,7 +1301,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                 }
             }
         } else {
-            messageEditText.setHint(LocaleController.getString("TypeMessage", R.string.TypeMessage));
+            messageEditText.setHint(LocaleController.getString("TypeMessage", R.string.GifMessage));
         }
     }
 
@@ -1354,6 +1382,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         }
         CharSequence message = messageEditText.getText();
         if (processSendingText(message)) {
+            /* Code called immediately after Sent */
             messageEditText.setText("");
             lastTypingTimeSend = 0;
             if (delegate != null) {
@@ -1846,6 +1875,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
             audioSendButton.setAlpha(1.0f);
             sendButton.setVisibility(GONE);
             cancelBotButton.setVisibility(GONE);
+            /* Code Called after Sent */
             messageEditText.setText("");
             delegate.onAttachButtonShow();
             updateFieldRight(1);
@@ -1857,6 +1887,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         if (messageEditText == null) {
             return;
         }
+
         ignoreTextChange = true;
         messageEditText.setText(text);
         messageEditText.setSelection(messageEditText.getText().length());
@@ -1906,6 +1937,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
             return;
         }
         if (focus) {
+           // showPopup(1,0);
             if (!messageEditText.isFocused()) {
                 messageEditText.postDelayed(new Runnable() {
                     @Override
@@ -1913,6 +1945,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                         if (messageEditText != null) {
                             try {
                                 messageEditText.requestFocus();
+
                             } catch (Exception e) {
                                 FileLog.e("tmessages", e);
                             }
@@ -2202,7 +2235,8 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                             messageEditText.setSelection(messageEditText.length());
                         }
                     } else if (messageEditText.getText().toString().equals("@gif ")) {
-                        messageEditText.setText("");
+
+            messageEditText.setText("");
                     }
                 }
             }
@@ -2295,17 +2329,21 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                 emojiPadding = currentHeight;
                 sizeNotifierLayout.requestLayout();
                 if (contentType == 0) {
-                    emojiButton.setImageResource(R.drawable.ic_msg_panel_kb);
+                    // Customized by Digant
+                    // emojiButton.setImageResource(R.drawable.ic_msg_panel_kb);
                 } else if (contentType == 1) {
-                    emojiButton.setImageResource(R.drawable.ic_msg_panel_smiles);
+                   // Customized by Digant
+                    // emojiButton.setImageResource(R.drawable.ic_msg_panel_smiles);
                 }
                 updateBotButton();
                 onWindowSizeChanged();
             }
         } else {
-            if (emojiButton != null) {
-                emojiButton.setImageResource(R.drawable.ic_msg_panel_smiles);
-            }
+            // Customized by Digant
+            //
+             if (emojiButton != null) {
+                emojiButton.setImageResource(R.drawable.ic_smiles_gif);
+             }
             currentPopupContentType = -1;
             if (emojiView != null) {
                 emojiView.setVisibility(GONE);
@@ -2339,7 +2377,16 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         if (!AndroidUtilities.usingHardwareInput) {
             if (messageEditText.getText().toString().equals("@gif ")) {
                 messageEditText.setText("");
+                messageEditText.setSelection(messageEditText.getText().length());
             }
+        }
+    }
+
+    private void addGifToInputField(){
+        /* Custom Funciton by Digant */
+        if (!AndroidUtilities.usingHardwareInput) {
+                messageEditText.setText("@gif " + messageEditText.getText());
+                messageEditText.setSelection(messageEditText.getText().length());
         }
     }
 

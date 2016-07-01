@@ -278,6 +278,7 @@
     <string name="NoRecent">No recent</string>
     <string name="Message">Message</string>
     <string name="TypeMessage">Message</string>
+    <string name="GifMessage">\u0040gif </string>
     <string name="ShareMyContactInfo">Share my contact</string>
     <string name="AddToContacts">Add to contacts</string>
     <string name="EncryptedPlaceholderTitleIncoming">%s invited you to join a secret chat.</string>

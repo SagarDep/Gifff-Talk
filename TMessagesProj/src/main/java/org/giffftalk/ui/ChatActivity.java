@@ -3563,7 +3563,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                     } else if (type == 8 || type == 9) {
                         if (messageObjectsToForward.size() == 1) {
                             if (type == 8) {
-                                replyObjectTextView.setText(LocaleController.getString("AttachGif", R.string.AttachGif));
+                                 replyObjectTextView.setText(LocaleController.getString("AttachGif", R.string.AttachGif));
                             } else {
                                 String name;
                                 if ((name = FileLoader.getDocumentFileName(messageObjectsToForward.get(0).getDocument())).length() != 0) {
