@@ -26,7 +26,11 @@ public class LineProgressView extends View {
     private float animatedAlphaValue = 1.0f;
 
     private int backColor;
+    /* Customized by Digant
     private int progressColor = 0xff36a2ee;
+     */
+    private int progressColor = 0xff9200AA;
+
 
     private static DecelerateInterpolator decelerateInterpolator = null;
     private static Paint progressPaint = null;

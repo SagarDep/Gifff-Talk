@@ -103,7 +103,9 @@ public class ApplicationLoader extends Application {
                         serviceSelectedMessageColor = preferences.getInt("serviceSelectedMessageColor", 0);
                         if (selectedColor == 0) {
                             if (selectedBackground == 1000001) {
-                                cachedWallpaper = applicationContext.getResources().getDrawable(R.drawable.background_hd);
+                                // Customized by Digant
+                                // cachedWallpaper = applicationContext.getResources().getDrawable(R.drawable.background_hd);
+                                cachedWallpaper = applicationContext.getResources().getDrawable(R.drawable.background_hd2);
                                 isCustomTheme = false;
                             } else {
                                 File toFile = new File(getFilesDirFixed(), "wallpaper.jpg");
@@ -111,7 +113,9 @@ public class ApplicationLoader extends Application {
                                     cachedWallpaper = Drawable.createFromPath(toFile.getAbsolutePath());
                                     isCustomTheme = true;
                                 } else {
-                                    cachedWallpaper = applicationContext.getResources().getDrawable(R.drawable.background_hd);
+                                    // Customized by Digant
+                                    // cachedWallpaper = applicationContext.getResources().getDrawable(R.drawable.background_hd);
+                                    cachedWallpaper = applicationContext.getResources().getDrawable(R.drawable.background_hd2);
                                     isCustomTheme = false;
                                 }
                             }

@@ -178,7 +178,9 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
 
             backgroundTablet = new ImageView(this);
             backgroundTablet.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            backgroundTablet.setImageResource(R.drawable.cats);
+            // Customized by Digant
+            // backgroundTablet.setImageResource(R.drawable.cats);
+            backgroundTablet.setImageResource(R.drawable.cats2);
             launchLayout.addView(backgroundTablet);
             RelativeLayout.LayoutParams relativeLayoutParams = (RelativeLayout.LayoutParams) backgroundTablet.getLayoutParams();
             relativeLayoutParams.width = LayoutHelper.MATCH_PARENT;

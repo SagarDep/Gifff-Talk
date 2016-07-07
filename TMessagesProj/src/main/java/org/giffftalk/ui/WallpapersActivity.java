@@ -361,7 +361,9 @@ public class WallpapersActivity extends BaseFragment implements NotificationCent
                 FileLoader.getInstance().cancelLoadFile(loadingSize);
             }
             if (selectedBackground == 1000001) {
-                backgroundImage.setImageResource(R.drawable.background_hd);
+                // Customized by Digant
+                // backgroundImage.setImageResource(R.drawable.background_hd);
+                backgroundImage.setImageResource(R.drawable.background_hd2);
                 backgroundImage.setBackgroundColor(0);
                 selectedColor = 0;
             } else if (selectedBackground == -1) {
