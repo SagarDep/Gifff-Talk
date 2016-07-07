@@ -3,8 +3,8 @@
 <!--https://www.transifex.com/projects/p/telegram/language/ko/members/-->
 
 <resources>
-    <string name="AppName">지프 토크</string>
-    <string name="AppNameBeta">지프 토크</string>
+    <string name="AppName">지프 채팅</string>
+    <string name="AppNameBeta">지프 채팅</string>
     <string name="LanguageName">한국어</string>
     <string name="LanguageNameInEnglish">Korean</string>
     <string name="LanguageCode">ko</string>
@@ -982,14 +982,14 @@
     <string name="AllowReadCallAndSms">텔레그램이 SMS 및 전화를 수신 할 수 있도록 설정해주셔야 자동으로 코드 입력이 가능합니다.</string>
     <string name="UserRestricted">죄송합니다, 이 작업이 제한되었습니다.</string>
     <!--permissions-->
-    <string name="PermissionContacts">Telegram은 여러 기기에서 친구와 메시지를 주고받을 수 있도록 회원님의 연락처 접근이 필요합니다.</string>
-    <string name="PermissionStorage">Telegram은 사진, 비디오, 음악 및 다양한 미디어를 공유 및 저장하기 위하여 스토리지 접근이 필요합니다.</string>
-    <string name="PermissionNoAudio">Telegram이 음성 메시지를 보내기 위하여 마이크에 대한 접근이 필요합니다.</string>
-    <string name="PermissionNoLocation">Telegram이 위치를 친구분들과 공유하기 위해 위치에 대한 접근 권한을 필요로 합니다.</string>
+    <string name="PermissionContacts">Gif Chat은 여러 기기에서 친구와 메시지를 주고받을 수 있도록 회원님의 연락처 접근이 필요합니다.</string>
+    <string name="PermissionStorage">Gif Chat은 사진, 비디오, 음악 및 다양한 미디어를 공유 및 저장하기 위하여 스토리지 접근이 필요합니다.</string>
+    <string name="PermissionNoAudio">Gif Chat이 음성 메시지를 보내기 위하여 마이크에 대한 접근이 필요합니다.</string>
+    <string name="PermissionNoLocation">Gif Chat이 위치를 친구분들과 공유하기 위해 위치에 대한 접근 권한을 필요로 합니다.</string>
     <string name="PermissionNoLocationPosition">텔레그램이 위치에 대한 권한이 필요합니다.</string>
     <string name="PermissionOpenSettings">설정</string>
     <!--Intro view-->
-    <string name="Page1Title">텔레그램</string>
+    <string name="Page1Title">지프 채팅</string>
     <string name="Page2Title">눈부신 속도</string>
     <string name="Page3Title">완전 무료</string>
     <string name="Page4Title">보안성</string>
@@ -997,12 +997,12 @@
     <string name="Page6Title">클라우드 기반</string>
     <string name="Page7Title">사생활 보호</string>
     <string name="Page1Message">세상에서 가장 <![CDATA[<b>빠르고 안전한</b><br/><b>무료</b>]]> 메신저입니다.</string>
-    <string name="Page2Message"><![CDATA[<b>텔레그램</b>]]>은 어떤 메신저보다도<![CDATA[<br/>]]>빠르게 메시지를 전송합니다.</string>
-    <string name="Page3Message"><![CDATA[<b>텔레그램</b>]]>은 영원히 무료입니다.<![CDATA[<br/>]]>광고도 없고 이용료도 없습니다.</string>
-    <string name="Page4Message"><![CDATA[<b>텔레그램</b>]]>은 그 어떤 누구로부터도<![CDATA[<br/>]]>메시지를 안전하게 보호합니다.</string>
-    <string name="Page5Message"><![CDATA[<b>텔레그램</b>]]>은 대화나 미디어의<![CDATA[<br/>]]>용량에 제한이 없습니다.</string>
-    <string name="Page6Message"><![CDATA[<b>텔레그램</b>]]>은 다른 기기에서도<![CDATA[<br/>]]>동시에 사용할 수 있습니다.</string>
-    <string name="Page7Message"><![CDATA[<b>텔레그램</b>]]>은 메시지를 강력하게 암호화하며<![CDATA[<br/>]]>자동으로 삭제되게 할 수 있습니다.</string>
+    <string name="Page2Message"><![CDATA[<b>지프 채팅</b>]]>은 어떤 메신저보다도<![CDATA[<br/>]]>빠르게 메시지를 전송합니다.</string>
+    <string name="Page3Message"><![CDATA[<b>지프 채팅</b>]]>은 영원히 무료입니다.<![CDATA[<br/>]]>광고도 없고 이용료도 없습니다.</string>
+    <string name="Page4Message"><![CDATA[<b>지프 채팅</b>]]>은 그 어떤 누구로부터도<![CDATA[<br/>]]>메시지를 안전하게 보호합니다.</string>
+    <string name="Page5Message"><![CDATA[<b>지프 채팅</b>]]>은 대화나 미디어의<![CDATA[<br/>]]>용량에 제한이 없습니다.</string>
+    <string name="Page6Message"><![CDATA[<b>지프 채팅</b>]]>은 다른 기기에서도<![CDATA[<br/>]]>동시에 사용할 수 있습니다.</string>
+    <string name="Page7Message"><![CDATA[<b>지프 채팅</b>]]>은 메시지를 강력하게 암호화하며<![CDATA[<br/>]]>자동으로 삭제되게 할 수 있습니다.</string>
     <string name="StartMessaging">시작하기</string>
     <!--plural-->
     <string name="Online_zero">온라인 %1$d명</string>

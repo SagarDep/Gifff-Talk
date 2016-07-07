@@ -1473,7 +1473,9 @@ public class NotificationsController {
                     .setContentIntent(contentIntent)
                     .setGroup("messages")
                     .setGroupSummary(true)
-                    .setColor(0xff2ca5e0);
+                    // Customized by Digant .setColor(0xff2ca5e0)
+                    .setColor(0xff9200AA);
+
 
             mBuilder.setCategory(NotificationCompat.CATEGORY_MESSAGE);
             if (chat == null && user != null && user.phone != null && user.phone.length() > 0) {
@@ -1767,7 +1769,9 @@ public class NotificationsController {
                     .setGroup("messages")
                     .setContentText(text)
                     .setAutoCancel(true)
-                    .setColor(0xff2ca5e0)
+                  // Customized by Digant
+                    // .setColor(0xff2ca5e0)
+                    .setColor(0xff9200AA)
                     .setGroupSummary(false)
                     .setContentIntent(contentIntent)
                     .extend(wearableExtender)

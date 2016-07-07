@@ -38,7 +38,9 @@ public class CheckBoxSquare extends View {
     private boolean isChecked;
     private boolean isDisabled;
 
-    private int color = 0xff43a0df;
+    // Customized by Digant
+    // private int color = 0xff43a0df;;
+    private int color = 0xff9200AA;
 
     private final static float progressBounceDiff = 0.2f;
 

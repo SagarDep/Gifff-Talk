@@ -16,8 +16,12 @@
         <item name="android:colorBackground">@android:color/white</item>
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorPrimaryDark">#426482</item>
+        <!-- Customized by Digant <item name="android:colorPrimaryDark">#426482</item>
         <item name="android:colorPrimary">#527da3</item>
+        -->
+        <item name="android:colorPrimaryDark">#851C97</item>
+        <item name="android:colorPrimary">#9B14B1</item>
+
     </style>
 
     <style name="Theme.TMessages" parent="@android:style/Theme.Material.Light">
@@ -32,10 +36,17 @@
         <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector</item>
         <item name="android:editTextStyle">@style/Theme.TMessages.EditText</item>
         <item name="android:actionBarItemBackground">@drawable/bar_selector_style</item>
+        <!-- Customized by Digant
         <item name="android:colorPrimaryDark">#33000000</item>
         <item name="android:colorPrimary">#527da3</item>
+        -->
+        <item name="android:colorPrimaryDark">#851C97</item>
+        <item name="android:colorPrimary">#9B14B1</item>
         <item name="android:alertDialogTheme">@style/Theme.TMessages.Dialog.Alert</item>
+        <!-- Customized by Digant
         <item name="android:colorControlActivated">#4991cc</item>
+        -->
+        <item name="android:colorControlActivated">#9B14B1</item>
     </style>
 
     <style name="Theme.TMessages.PopupNotification" parent="Theme.TMessages">
@@ -48,13 +59,18 @@
     </style>
 
     <style name="Theme.TMessages.Dialog.Alert" parent="android:style/Theme.Material.Light.Dialog.Alert">
+        <!--
+        Customized by Digant
         <item name="android:colorAccent">#4991cc</item>
+        -->
+        <item name="android:colorAccent">#9B14B1</item>
     </style>
 
     <!--ACTION BAR-->
 
     <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Material.Light.ActionBar">
-        <item name="android:background">#ff527da3</item>
+        <!-- Customized by Digant <item name="android:background">#ff527da3</item> -->
+        <item name="android:background">#9200AA</item>
         <item name="android:logo">@drawable/transparent</item>
         <item name="android:title">""</item>
     </style>

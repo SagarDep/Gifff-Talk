@@ -45,7 +45,9 @@ public class CheckBox extends View {
 
     private int size = 22;
     private int checkOffset;
-    private int color = 0xff5ec245;
+    // Customized by Digant
+    // private int color = 0xff5ec245;
+    private int color = 0xff9200AA;
 
     private final static float progressBounceDiff = 0.2f;
 

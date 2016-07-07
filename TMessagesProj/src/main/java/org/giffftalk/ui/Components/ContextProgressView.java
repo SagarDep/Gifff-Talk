@@ -29,7 +29,9 @@ public class ContextProgressView extends View {
         innerPaint.setColor(0xffbfdff6);
         innerPaint.setStyle(Paint.Style.STROKE);
         innerPaint.setStrokeWidth(AndroidUtilities.dp(2));
-        outerPaint.setColor(0xff2b96e2);
+        // Customized by Digant
+        // outerPaint.setColor(0xff2b96e2);
+        outerPaint.setColor(0xff9200AA);
         outerPaint.setStyle(Paint.Style.STROKE);
         outerPaint.setStrokeWidth(AndroidUtilities.dp(2));
         outerPaint.setStrokeCap(Paint.Cap.ROUND);
