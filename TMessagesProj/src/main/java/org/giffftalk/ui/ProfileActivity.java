@@ -2446,7 +2446,7 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
                         /* Customized by Digant
                         textCell.setTextColor(0xff37a919);
                          */
-                        textCell.setTextColor(0xff9200AA);
+                        textCell.setTextColor(0xffffffff);
                     } else if (i == settingsKeyRow) {
                         IdenticonDrawable identiconDrawable = new IdenticonDrawable();
                         TLRPC.EncryptedChat encryptedChat = MessagesController.getInstance().getEncryptedChat((int)(dialog_id >> 32));

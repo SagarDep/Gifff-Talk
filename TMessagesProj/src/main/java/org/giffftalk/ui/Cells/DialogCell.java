@@ -142,7 +142,10 @@ public class DialogCell extends BaseCell {
 
             nameEncryptedPaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
             nameEncryptedPaint.setTextSize(AndroidUtilities.dp(17));
+           /* Customized by Digant
             nameEncryptedPaint.setColor(0xff00a60e);
+             */
+            nameEncryptedPaint.setColor(0xffffffff);
             nameEncryptedPaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
 
             messagePaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
@@ -170,8 +173,11 @@ public class DialogCell extends BaseCell {
             countPaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
 
             lockDrawable = getResources().getDrawable(R.drawable.list_secret);
+           /* Customized by Digant
             checkDrawable = getResources().getDrawable(R.drawable.dialogs_check);
-            halfCheckDrawable = getResources().getDrawable(R.drawable.dialogs_halfcheck);
+             */
+            checkDrawable = getResources().getDrawable(R.drawable.dialogs_check2);
+            halfCheckDrawable = getResources().getDrawable(R.drawable.dialogs_halfcheck2);
             clockDrawable = getResources().getDrawable(R.drawable.msg_clock);
             errorDrawable = getResources().getDrawable(R.drawable.dialogs_warning);
             countDrawable = getResources().getDrawable(R.drawable.dialogs_badge);
@@ -179,7 +185,10 @@ public class DialogCell extends BaseCell {
             groupDrawable = getResources().getDrawable(R.drawable.list_group);
             broadcastDrawable = getResources().getDrawable(R.drawable.list_broadcast);
             muteDrawable = getResources().getDrawable(R.drawable.mute_grey);
+            /* Customized by Digant
             verifiedDrawable = getResources().getDrawable(R.drawable.check_list);
+             */
+            verifiedDrawable = getResources().getDrawable(R.drawable.check_list2);
             botDrawable = getResources().getDrawable(R.drawable.bot_list);
         }
 

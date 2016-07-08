@@ -994,7 +994,11 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         sendButton = new ImageView(context);
         sendButton.setVisibility(INVISIBLE);
         sendButton.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+
+        /* Customized by Digant
         sendButton.setImageResource(R.drawable.ic_send);
+         */
+        sendButton.setImageResource(R.drawable.ic_send2);
         sendButton.setSoundEffectsEnabled(false);
         sendButton.setScaleX(0.1f);
         sendButton.setScaleY(0.1f);

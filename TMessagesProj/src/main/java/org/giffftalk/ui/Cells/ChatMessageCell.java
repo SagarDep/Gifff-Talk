@@ -3003,9 +3003,19 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
                     canvas.restore();
                     linkPreviewY += siteNameLayout.getLineBottom(siteNameLayout.getLineCount() - 1);
                 }
+                /* Customized by Digant
+                *  replyNamePaint.setColor(Theme.MSG_TEXT_COLOR);
+                    replyTextPaint.setColor(Theme.MSG_TEXT_COLOR);
+                * */
+                if(currentMessageObject.isOutOwner()){
+                    replyNamePaint.setColor(Theme.MSG_OUT_SITE_NAME_TEXT_COLOR);
+                    replyTextPaint.setColor(Theme.MSG_OUT_SITE_NAME_TEXT_COLOR);
+                }
+                else{
+                    replyNamePaint.setColor(Theme.MSG_TEXT_COLOR);
+                    replyTextPaint.setColor(Theme.MSG_TEXT_COLOR);
+                }
 
-                replyNamePaint.setColor(Theme.MSG_TEXT_COLOR);
-                replyTextPaint.setColor(Theme.MSG_TEXT_COLOR);
                 if (titleLayout != null) {
                     if (linkPreviewY != startY) {
                         linkPreviewY += dp(2);
@@ -4024,12 +4034,15 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
                     stringBuilder.setSpan(new TypefaceSpan(getTypeface("fonts/rmedium.ttf"), 0, color), nameStringFinal.length() + 5, stringBuilder.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                     nameStringFinal = stringBuilder;
                 } else {
-                    SpannableStringBuilder stringBuilder = new SpannableStringBuilder(String.format("via %s", viaUsername));
+                    /* SpannableStringBuilder stringBuilder = new SpannableStringBuilder(String.format("via %s", viaUsername));
                     stringBuilder.setSpan(new TypefaceSpan(Typeface.DEFAULT, 0, color), 0, 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                     stringBuilder.setSpan(new TypefaceSpan(getTypeface("fonts/rmedium.ttf"), 0, color), 4, stringBuilder.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                     nameStringFinal = stringBuilder;
-                    /* Custom by Digant */
-                    nameStringFinal = UserObject.getUserName(currentUser) + " says";
+                     Custom by Digant */
+                    SpannableStringBuilder stringBuilder = new SpannableStringBuilder(String.format("%s says", UserObject.getUserName(currentUser)));
+                    stringBuilder.setSpan(new TypefaceSpan(Typeface.DEFAULT, 0, color), 0, 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    stringBuilder.setSpan(new TypefaceSpan(getTypeface("fonts/rmedium.ttf"), 0, color), 4, stringBuilder.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    nameStringFinal = stringBuilder;
                 }
                 nameStringFinal = TextUtils.ellipsize(nameStringFinal, namePaint, nameWidth, TextUtils.TruncateAt.END);
             }

@@ -31,11 +31,19 @@ public class AvatarDrawable extends Drawable {
     private static Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private static TextPaint namePaint;
     private static TextPaint namePaintSmall;
+
+    private static int[] arrColorsProfilesText = {0xfff9cbc5, 0xfffdddc8, 0xffcdc4ed, 0xffc0edba, 0xffb8e2f0, Theme.ACTION_BAR_PROFILE_SUBTITLE_COLOR, 0xffcdc4ed, 0xffb3d7f7};
+    /* Customized by Digant
+    private static int[] arrColorsNames = {0xffca5650, 0xffd87b29, 0xff4e92cc, 0xff50b232, 0xff42b1a8, 0xff4e92cc, 0xff4e92cc, 0xff4e92cc};
     private static int[] arrColors = {0xffe56555, 0xfff28c48, 0xff8e85ee, 0xff76c84d, 0xff5fbed5, 0xff549cdd, 0xff8e85ee, 0xfff2749a};
     private static int[] arrColorsProfiles = {0xffd86f65, 0xfff69d61, 0xff8c79d2, 0xff67b35d, 0xff56a2bb, Theme.ACTION_BAR_MAIN_AVATAR_COLOR, 0xff8c79d2, 0xfff37fa6};
     private static int[] arrColorsProfilesBack = {0xffca6056, 0xfff18944, 0xff7d6ac4, 0xff56a14c, 0xff4492ac, Theme.ACTION_BAR_PROFILE_COLOR, 0xff7d6ac4, 0xff4c84b6};
-    private static int[] arrColorsProfilesText = {0xfff9cbc5, 0xfffdddc8, 0xffcdc4ed, 0xffc0edba, 0xffb8e2f0, Theme.ACTION_BAR_PROFILE_SUBTITLE_COLOR, 0xffcdc4ed, 0xffb3d7f7};
-    private static int[] arrColorsNames = {0xffca5650, 0xffd87b29, 0xff4e92cc, 0xff50b232, 0xff42b1a8, 0xff4e92cc, 0xff4e92cc, 0xff4e92cc};
+     */
+    private static int[] arrColorsProfilesBack = {0xffca6056, 0xfff18944, 0xff7d6ac4, 0xff9200AA, 0xff4492ac, Theme.ACTION_BAR_PROFILE_COLOR, 0xff7d6ac4, 0xff4c84b6};
+    private static int[] arrColorsProfiles = {0xffd86f65, 0xfff69d61, 0xff8c79d2, 0xff9200AA, 0xff56a2bb, Theme.ACTION_BAR_MAIN_AVATAR_COLOR, 0xff8c79d2, 0xfff37fa6};
+    /* Change this to White */
+    private static int[] arrColorsNames = {0xff9200AA, 0xff9200AA, 0xff4e92cc, 0xff9200AA, 0xff42b1a8, 0xff4e92cc, 0xff4e92cc, 0xff4e92cc};
+    private static int[] arrColors = {0xffe56555, 0xfff28c48, 0xff8e85ee, 0xff9200AA, 0xff5fbed5, 0xff549cdd, 0xff8e85ee, 0xfff2749a};
     private static int[] arrColorsButtons = {Theme.ACTION_BAR_RED_SELECTOR_COLOR, Theme.ACTION_BAR_ORANGE_SELECTOR_COLOR, Theme.ACTION_BAR_VIOLET_SELECTOR_COLOR,
             Theme.ACTION_BAR_GREEN_SELECTOR_COLOR, Theme.ACTION_BAR_CYAN_SELECTOR_COLOR, Theme.ACTION_BAR_BLUE_SELECTOR_COLOR, Theme.ACTION_BAR_VIOLET_SELECTOR_COLOR, Theme.ACTION_BAR_BLUE_SELECTOR_COLOR};
 
