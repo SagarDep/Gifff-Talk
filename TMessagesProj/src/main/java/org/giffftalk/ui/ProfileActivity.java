@@ -2460,7 +2460,7 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
                         /* Customized by Digant
                         textCell.setTextColor(0xff37a919);
                          */
-                        textCell.setTextColor(0xff9200AA);
+                        textCell.setTextColor(Theme.PRIMARY_COLOR);
                     } else if (i == membersRow) {
                         if (info != null) {
                             textCell.setTextAndValue(LocaleController.getString("ChannelMembers", R.string.ChannelMembers), String.format("%d", info.participants_count));

@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
 import org.giffftalk.messenger.AndroidUtilities;
+import org.giffftalk.ui.ActionBar.Theme;
 
 public class LineProgressView extends View {
 
@@ -29,7 +30,7 @@ public class LineProgressView extends View {
     /* Customized by Digant
     private int progressColor = 0xff36a2ee;
      */
-    private int progressColor = 0xff9200AA;
+    private int progressColor = Theme.PRIMARY_COLOR;
 
 
     private static DecelerateInterpolator decelerateInterpolator = null;

@@ -20,6 +20,7 @@ import android.graphics.RectF;
 import android.view.View;
 
 import org.giffftalk.messenger.AndroidUtilities;
+import org.giffftalk.ui.ActionBar.Theme;
 
 public class CheckBoxSquare extends View {
 
@@ -40,7 +41,7 @@ public class CheckBoxSquare extends View {
 
     // Customized by Digant
     // private int color = 0xff43a0df;;
-    private int color = 0xff9200AA;
+    private int color = Theme.PRIMARY_COLOR;
 
     private final static float progressBounceDiff = 0.2f;
 

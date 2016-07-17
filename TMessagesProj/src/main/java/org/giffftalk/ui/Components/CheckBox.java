@@ -19,6 +19,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import org.giffftalk.messenger.AndroidUtilities;
+import org.giffftalk.ui.ActionBar.Theme;
 
 public class CheckBox extends View {
 
@@ -47,7 +48,7 @@ public class CheckBox extends View {
     private int checkOffset;
     // Customized by Digant
     // private int color = 0xff5ec245;
-    private int color = 0xff9200AA;
+    private int color = Theme.PRIMARY_COLOR;
 
     private final static float progressBounceDiff = 0.2f;
 

@@ -18,10 +18,12 @@
         <item name="android:windowContentOverlay">@null</item>
         <!-- Customized by Digant <item name="android:colorPrimaryDark">#426482</item>
         <item name="android:colorPrimary">#527da3</item>
+        #691A99
         -->
-        <item name="android:colorPrimaryDark">#851C97</item>
-        <item name="android:colorPrimary">#9B14B1</item>
-
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:colorPrimary">#3F51B5</item>
+        <!-- By Digant Make the status bar traslucent -->
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
     <style name="Theme.TMessages" parent="@android:style/Theme.Material.Light">
@@ -39,14 +41,16 @@
         <!-- Customized by Digant
         <item name="android:colorPrimaryDark">#33000000</item>
         <item name="android:colorPrimary">#527da3</item>
+        #691A99
         -->
-        <item name="android:colorPrimaryDark">#851C97</item>
-        <item name="android:colorPrimary">#9B14B1</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorPrimary">#3F51B5</item>
         <item name="android:alertDialogTheme">@style/Theme.TMessages.Dialog.Alert</item>
         <!-- Customized by Digant
         <item name="android:colorControlActivated">#4991cc</item>
         -->
-        <item name="android:colorControlActivated">#9B14B1</item>
+        <item name="android:colorControlActivated">#3F51B5</item>
     </style>
 
     <style name="Theme.TMessages.PopupNotification" parent="Theme.TMessages">
@@ -63,14 +67,14 @@
         Customized by Digant
         <item name="android:colorAccent">#4991cc</item>
         -->
-        <item name="android:colorAccent">#9B14B1</item>
+        <item name="android:colorAccent">#3F51B5</item>
     </style>
 
     <!--ACTION BAR-->
 
     <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Material.Light.ActionBar">
         <!-- Customized by Digant <item name="android:background">#ff527da3</item> -->
-        <item name="android:background">#9200AA</item>
+        <item name="android:background">#3F51B5</item>
         <item name="android:logo">@drawable/transparent</item>
         <item name="android:title">""</item>
     </style>
@@ -85,7 +89,8 @@
     <!--BORDERLESS BUTTON-->
 
     <style name="Theme.TMessages.BorderLessButton" parent="android:Widget.Material.Light.ButtonBar.AlertDialog">
-        <item name="android:textColor">#4991cc</item>
+        <item name="android:textColor">#3F51B5
+        </item>
     </style>
 
     <!--LIST VIEW-->

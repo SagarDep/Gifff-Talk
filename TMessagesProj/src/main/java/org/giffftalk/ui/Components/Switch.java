@@ -35,6 +35,7 @@ import android.widget.CompoundButton;
 import org.giffftalk.messenger.AndroidUtilities;
 import org.giffftalk.messenger.LocaleController;
 import org.giffftalk.messenger.R;
+import org.giffftalk.ui.ActionBar.Theme;
 
 public class Switch extends CompoundButton {
 
@@ -414,11 +415,11 @@ public class Switch extends CompoundButton {
         if (mTrackDrawable != null) {
             // Customized by Digant
             // mTrackDrawable.setColorFilter(new PorterDuffColorFilter(checked ? 0xffa0d6fa : 0xffc7c7c7, PorterDuff.Mode.MULTIPLY));
-            mTrackDrawable.setColorFilter(new PorterDuffColorFilter(checked ? 0xff9200AA : 0xffc7c7c7, PorterDuff.Mode.MULTIPLY));
+            mTrackDrawable.setColorFilter(new PorterDuffColorFilter(checked ? Theme.PRIMARY_COLOR : 0xffc7c7c7, PorterDuff.Mode.MULTIPLY));
         }
         if (mThumbDrawable != null) {
             // mThumbDrawable.setColorFilter(new PorterDuffColorFilter(checked ? 0xff45abef : 0xffededed, PorterDuff.Mode.MULTIPLY));
-            mThumbDrawable.setColorFilter(new PorterDuffColorFilter(checked ? 0xff9200AA : 0xffededed, PorterDuff.Mode.MULTIPLY));
+            mThumbDrawable.setColorFilter(new PorterDuffColorFilter(checked ? Theme.PRIMARY_COLOR : 0xffededed, PorterDuff.Mode.MULTIPLY));
         }
     }
 

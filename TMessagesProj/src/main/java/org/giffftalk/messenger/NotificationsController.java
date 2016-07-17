@@ -38,6 +38,7 @@ import org.giffftalk.tgnet.ConnectionsManager;
 import org.giffftalk.tgnet.RequestDelegate;
 import org.giffftalk.tgnet.TLObject;
 import org.giffftalk.tgnet.TLRPC;
+import org.giffftalk.ui.ActionBar.Theme;
 import org.giffftalk.ui.LaunchActivity;
 import org.giffftalk.ui.PopupNotificationActivity;
 
@@ -1474,7 +1475,7 @@ public class NotificationsController {
                     .setGroup("messages")
                     .setGroupSummary(true)
                     // Customized by Digant .setColor(0xff2ca5e0)
-                    .setColor(0xff9200AA);
+                    .setColor(Theme.PRIMARY_COLOR);
 
 
             mBuilder.setCategory(NotificationCompat.CATEGORY_MESSAGE);
@@ -1771,7 +1772,7 @@ public class NotificationsController {
                     .setAutoCancel(true)
                   // Customized by Digant
                     // .setColor(0xff2ca5e0)
-                    .setColor(0xff9200AA)
+                    .setColor(Theme.PRIMARY_COLOR)
                     .setGroupSummary(false)
                     .setContentIntent(contentIntent)
                     .extend(wearableExtender)

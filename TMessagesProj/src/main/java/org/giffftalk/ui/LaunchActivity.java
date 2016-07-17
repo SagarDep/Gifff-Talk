@@ -203,7 +203,7 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
             rightActionBarLayout.setDelegate(this);
 
             shadowTabletSide = new FrameLayout(this);
-            shadowTabletSide.setBackgroundColor(0x40295274);
+            shadowTabletSide.setBackgroundColor(Theme.FIFTH_COLOR);
             launchLayout.addView(shadowTabletSide);
             relativeLayoutParams = (RelativeLayout.LayoutParams) shadowTabletSide.getLayoutParams();
             relativeLayoutParams.width = AndroidUtilities.dp(1);

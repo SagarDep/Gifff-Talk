@@ -176,7 +176,7 @@ public class DialogCell extends BaseCell {
            /* Customized by Digant
             checkDrawable = getResources().getDrawable(R.drawable.dialogs_check);
              */
-            checkDrawable = getResources().getDrawable(R.drawable.dialogs_check2);
+            checkDrawable = getResources().getDrawable(R.drawable.dialogs_check3);
             halfCheckDrawable = getResources().getDrawable(R.drawable.dialogs_halfcheck2);
             clockDrawable = getResources().getDrawable(R.drawable.msg_clock);
             errorDrawable = getResources().getDrawable(R.drawable.dialogs_warning);
@@ -188,7 +188,7 @@ public class DialogCell extends BaseCell {
             /* Customized by Digant
             verifiedDrawable = getResources().getDrawable(R.drawable.check_list);
              */
-            verifiedDrawable = getResources().getDrawable(R.drawable.check_list2);
+            verifiedDrawable = getResources().getDrawable(R.drawable.check_list);
             botDrawable = getResources().getDrawable(R.drawable.bot_list);
         }
 

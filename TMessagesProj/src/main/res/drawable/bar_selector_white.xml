@@ -10,19 +10,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="#9200AA" />
+            <solid android:color="#212121" />
             <!-- Customized by Digant <solid android:color="#40ffffff" />-->
         </shape>
     </item>
     <item android:state_focused="true">
         <shape android:shape="rectangle">
-            <solid android:color="#9200AA" />
+            <solid android:color="#212121" />
             <!-- Customized by Digant <solid android:color="#40ffffff" />-->
         </shape>
     </item>
     <item android:state_selected="true">
         <shape android:shape="rectangle">
-            <solid android:color="#9200AA" />
+            <solid android:color="#212121" />
             <!-- Customized by Digant <solid android:color="#40ffffff" />-->
         </shape>
     </item>

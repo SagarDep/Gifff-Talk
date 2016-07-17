@@ -30,6 +30,7 @@ import org.giffftalk.tgnet.TLRPC;
 import org.giffftalk.messenger.UserConfig;
 import org.giffftalk.ui.ActionBar.ActionBar;
 import org.giffftalk.ui.ActionBar.BaseFragment;
+import org.giffftalk.ui.ActionBar.Theme;
 import org.giffftalk.ui.Components.LayoutHelper;
 
 public class ChangePhoneHelpActivity extends BaseFragment {
@@ -117,7 +118,7 @@ public class ChangePhoneHelpActivity extends BaseFragment {
         textView = new TextView(context);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
         textView.setGravity(Gravity.CENTER_HORIZONTAL);
-        textView.setTextColor(0xff4d83b3);
+        textView.setTextColor(Theme.PRIMARY_COLOR);
         textView.setText(LocaleController.getString("PhoneNumberChange", R.string.PhoneNumberChange));
         textView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         textView.setPadding(0, AndroidUtilities.dp(10), 0, AndroidUtilities.dp(10));

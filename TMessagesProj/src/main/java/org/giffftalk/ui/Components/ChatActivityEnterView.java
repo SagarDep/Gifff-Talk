@@ -447,7 +447,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         public RecordCircle(Context context) {
             super(context);
             // Customized by Digant paint.setColor(0xff5795cc);
-            paint.setColor(0xff9200AA);
+            paint.setColor(Theme.PRIMARY_COLOR);
             paintRecord.setColor(0x0d000000);
             micDrawable = getResources().getDrawable(R.drawable.mic_pressed);
         }

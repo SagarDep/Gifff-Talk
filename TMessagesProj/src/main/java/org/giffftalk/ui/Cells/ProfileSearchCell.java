@@ -103,7 +103,7 @@ public class ProfileSearchCell extends BaseCell {
             /* Customized By Digant
             nameEncryptedPaint.setColor(0xff00a60e);
              */
-            nameEncryptedPaint.setColor(0xff9200AA);
+            nameEncryptedPaint.setColor(Theme.SIXTH_COLOR);
             nameEncryptedPaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
 
             onlinePaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
@@ -131,7 +131,7 @@ public class ProfileSearchCell extends BaseCell {
             /* Customized by Digant
             checkDrawable = getResources().getDrawable(R.drawable.check_list);
              */
-            checkDrawable = getResources().getDrawable(R.drawable.check_list2);
+            checkDrawable = getResources().getDrawable(R.drawable.check_list);
             botDrawable = getResources().getDrawable(R.drawable.bot_list);
         }
 

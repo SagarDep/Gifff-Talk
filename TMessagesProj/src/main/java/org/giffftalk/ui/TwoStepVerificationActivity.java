@@ -51,6 +51,7 @@ import org.giffftalk.ui.ActionBar.ActionBar;
 import org.giffftalk.ui.ActionBar.ActionBarMenu;
 import org.giffftalk.ui.ActionBar.ActionBarMenuItem;
 import org.giffftalk.ui.ActionBar.BaseFragment;
+import org.giffftalk.ui.ActionBar.Theme;
 import org.giffftalk.ui.Adapters.BaseFragmentAdapter;
 import org.giffftalk.ui.Cells.TextInfoPrivacyCell;
 import org.giffftalk.ui.Cells.TextSettingsCell;
@@ -259,7 +260,7 @@ public class TwoStepVerificationActivity extends BaseFragment implements Notific
         linearLayout2.setLayoutParams(layoutParams3);
 
         bottomButton = new TextView(context);
-        bottomButton.setTextColor(0xff4d83b3);
+        bottomButton.setTextColor(Theme.PRIMARY_COLOR);
         bottomButton.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
         bottomButton.setGravity((LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT) | Gravity.BOTTOM);
         bottomButton.setText(LocaleController.getString("YourEmailSkip", R.string.YourEmailSkip));

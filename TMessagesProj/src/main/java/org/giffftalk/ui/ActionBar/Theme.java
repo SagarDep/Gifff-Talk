@@ -45,31 +45,50 @@ public class Theme {
     public static final int MSG_IN_REPLY_NAME_TEXT_COLOR = 0xff3a8ccf;
     public static final int MSG_IN_SITE_NAME_TEXT_COLOR = 0xff3a8ccf;
     */
-    public static final int ACTION_BAR_COLOR = 0xff9200AA;
-    public static final int MSG_IN_SITE_NAME_TEXT_COLOR = 0xff9200AA;
-    public static final int MSG_IN_REPLY_NAME_TEXT_COLOR = 0xff9200AA;
-    public static final int MSG_IN_VIA_BOT_NAME_TEXT_COLOR = 0xff9200AA;
-    public static final int PINNED_PANEL_NAME_TEXT_COLOR = 0xff9200AA;
-    public static final int STICKERS_SHEET_SEND_TEXT_COLOR = 0xff9200AA;
-    public static final int STICKERS_SHEET_ADD_TEXT_COLOR = 0xff9200AA;
-    public static final int STICKERS_SHEET_CLOSE_TEXT_COLOR = 0xff9200AA;
-    public static final int SHARE_SHEET_COPY_TEXT_COLOR = 0xff9200AA;
-    public static final int CHAT_BOTTOM_CHAT_OVERLAY_TEXT_COLOR = 0xffffffff;
-    public static final int AUTODOWNLOAD_SHEET_SAVE_TEXT_COLOR = 0xff9200AA;
-    public static final int ALERT_PANEL_NAME_TEXT_COLOR = 0xff9200AA;
-    public static final int REPLY_PANEL_NAME_TEXT_COLOR = 0xff9200AA;
-    public static final int ACTION_BAR_MAIN_AVATAR_COLOR = 0xff9200AA;
-    public static final int ACTION_BAR_PROFILE_COLOR = 0xff9200AA;
-    public static final int ACTION_BAR_SELECTOR_COLOR = 0xff9200AA;
+    public static final int PRIMARY_COLOR = 0xff3F51B5; // Primary 0xff9B26AF 0xff212121
+    public static final int SECONDARY_COLOR = 0x66F06292; // Light Color
+    public static final int TERTIARY_COLOR = 0xff3F51B5; // Dark Color 691A99
+    public static final int FOURTH_COLOR = 0xffF06292; // 4c8cc4
+    public static final int FIFTH_COLOR = 0x403F51B5;
+    public static final int SIXTH_COLOR = 0xffffffff;
+    public static final int SEVENTH_COLOR = 0xffFF4081;
+
+
+
+    public static final int ACTION_BAR_COLOR = PRIMARY_COLOR;
+    /* Customize Header */
+
+    public static final int ACTION_BAR_SUBTITLE_COLOR = 0xffffffff; // White
+    /* Customize Header Subtitle  */
+
+    public static final int ACTION_BAR_PROFILE_COLOR = PRIMARY_COLOR;
+    public static final int ACTION_BAR_PROFILE_SUBTITLE_COLOR = PRIMARY_COLOR;
+    /* Customize Side Drawer Background  */
+
+    public static final int MSG_IN_SITE_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int MSG_IN_REPLY_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int MSG_IN_VIA_BOT_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int PINNED_PANEL_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int STICKERS_SHEET_SEND_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int STICKERS_SHEET_ADD_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int STICKERS_SHEET_CLOSE_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int SHARE_SHEET_COPY_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int CHAT_BOTTOM_CHAT_OVERLAY_TEXT_COLOR = SIXTH_COLOR;
+    public static final int AUTODOWNLOAD_SHEET_SAVE_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int ALERT_PANEL_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int REPLY_PANEL_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int ACTION_BAR_MAIN_AVATAR_COLOR = PRIMARY_COLOR;
+
+    public static final int ACTION_BAR_SELECTOR_COLOR = PRIMARY_COLOR;
     public static final int ACTION_BAR_PHOTO_VIEWER_COLOR = 0x7f000000;
     public static final int ACTION_BAR_MEDIA_PICKER_COLOR = 0xff333333;
     public static final int ACTION_BAR_CHANNEL_INTRO_COLOR = 0xffffffff;
     public static final int ACTION_BAR_PLAYER_COLOR = 0xffffffff;
     public static final int ACTION_BAR_TITLE_COLOR = 0xffffffff;
-    public static final int ACTION_BAR_SUBTITLE_COLOR = 0xffd5e8f7;
-    public static final int ACTION_BAR_PROFILE_SUBTITLE_COLOR = 0xffd7eafa;
+
 
     public static final int ACTION_BAR_ACTION_MODE_TEXT_COLOR = 0xff737373;
+
 
 
     public static final int INPUT_FIELD_SELECTOR_COLOR = 0xffd6d6d6;
@@ -78,12 +97,15 @@ public class Theme {
     public static final int ACTION_BAR_AUDIO_SELECTOR_COLOR = 0x2f000000;
     public static final int ACTION_BAR_CHANNEL_INTRO_SELECTOR_COLOR = 0x2f000000;
     public static final int ACTION_BAR_MODE_SELECTOR_COLOR = 0xfff0f0f0;
-    public static final int ACTION_BAR_BLUE_SELECTOR_COLOR = 0xff4981ad;
+    public static final int ACTION_BAR_BLUE_SELECTOR_COLOR = 0xffffffff;
+
     public static final int ACTION_BAR_CYAN_SELECTOR_COLOR = 0xff39849d;
     /* Customized by Digant
     public static final int ACTION_BAR_GREEN_SELECTOR_COLOR = 0xff48953d;
      */
-    public static final int ACTION_BAR_GREEN_SELECTOR_COLOR = 0xff9200AA;
+    public static final int ACTION_BAR_GREEN_SELECTOR_COLOR = PRIMARY_COLOR;
+
+
     public static final int ACTION_BAR_ORANGE_SELECTOR_COLOR = 0xffe67429;
     public static final int ACTION_BAR_PINK_SELECTOR_COLOR = 0xffd44e7b;
     public static final int ACTION_BAR_RED_SELECTOR_COLOR = 0xffbc4b41;
@@ -93,19 +115,25 @@ public class Theme {
     public static final int ATTACH_SHEET_TEXT_COLOR = 0xff757575;
 
     public static final int DIALOGS_MESSAGE_TEXT_COLOR = 0xff8f8f8f;
-    public static final int DIALOGS_NAME_TEXT_COLOR = 0xff4d83b3;
-    public static final int DIALOGS_ATTACH_TEXT_COLOR = 0xff4d83b3;
-    public static final int DIALOGS_PRINTING_TEXT_COLOR = 0xff4d83b3;
+    public static final int DIALOGS_NAME_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int DIALOGS_ATTACH_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int DIALOGS_PRINTING_TEXT_COLOR = PRIMARY_COLOR;
     public static final int DIALOGS_DRAFT_TEXT_COLOR = 0xffdd4b39;
 
-    public static final int CHAT_UNREAD_TEXT_COLOR = 0xff5695cc;
+    public static final int CHAT_UNREAD_TEXT_COLOR = PRIMARY_COLOR;
+    /* Customized Chat Unread Color - 0xff5695cc */
+
+
+    /* Customized by Digant
     public static final int CHAT_ADD_CONTACT_TEXT_COLOR = 0xff4a82b5;
+    */
+    public static final int CHAT_ADD_CONTACT_TEXT_COLOR = 0xffffffff;
     public static final int CHAT_REPORT_SPAM_TEXT_COLOR = 0xffcf5957;
     public static final int CHAT_BOTTOM_OVERLAY_TEXT_COLOR = 0xff7f7f7f;
 
     public static final int CHAT_GIF_HINT_TEXT_COLOR = 0xffffffff;
     public static final int CHAT_EMPTY_VIEW_TEXT_COLOR = 0xffffffff;
-    public static final int CHAT_SEARCH_COUNT_TEXT_COLOR = 0xff4e9ad4;
+    public static final int CHAT_SEARCH_COUNT_TEXT_COLOR = PRIMARY_COLOR;
 
     public static final int INAPP_PLAYER_PERFORMER_TEXT_COLOR = 0xff2f3438;
     public static final int INAPP_PLAYER_TITLE_TEXT_COLOR = 0xff2f3438;
@@ -141,11 +169,14 @@ public static final int MSG_IN_WEB_PREVIEW_LINE_COLOR = 0xff70b4e8;
      public static final int MSG_OUT_REPLY_LINE_COLOR = 0xff88c97b;
      public static final int MSG_OUT_WEB_PREVIEW_LINE_COLOR = 0xff88c97b;
      */
-public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
+public static final int MSG_IN_REPLY_LINE_COLOR = PRIMARY_COLOR;
     public static final int MSG_OUT_REPLY_LINE_COLOR = 0xff464646;
     public static final int MSG_OUT_WEB_PREVIEW_LINE_COLOR = 0xff464646;
-    public static final int MSG_IN_WEB_PREVIEW_LINE_COLOR = 0xff9200AA;
-    public static final int MSG_SELECTED_BACKGROUND_COLOR = 0x669200AA;
+    public static final int MSG_IN_WEB_PREVIEW_LINE_COLOR = PRIMARY_COLOR;
+
+    public static final int MSG_SELECTED_BACKGROUND_COLOR = SECONDARY_COLOR;
+    /* Customized Selected Background Colors */
+
     public static final int MSG_WEB_PREVIEW_DURATION_TEXT_COLOR = 0xffffffff;
     public static final int MSG_SECRET_TIME_TEXT_COLOR = 0xffe4e2e0;
     public static final int MSG_STICKER_NAME_TEXT_COLOR = 0xffffffff;
@@ -175,7 +206,7 @@ public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
     public static final int MSG_OUT_AUDIO_TITLE_TEXT_COLOR = 0xffffffff;
     public static final int MSG_OUT_VIA_BOT_NAME_TEXT_COLOR = 0xff464646;
     public static final int MSG_OUT_SITE_NAME_TEXT_COLOR = 0xff464646;
-    public static final int MSG_OUT_CONTACT_NAME_TEXT_COLOR = 0xffffffff;
+    public static final int MSG_OUT_CONTACT_NAME_TEXT_COLOR = 0xff464646;
     public static final int MSG_STICKER_REPLY_NAME_TEXT_COLOR = 0xffffffff;
     public static final int MSG_IN_REPLY_MESSAGE_TEXT_COLOR = 0xff000000;
     /* Customized by Digant
@@ -192,7 +223,7 @@ public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
 
     public static final int MSG_IN_CONTACT_NAME_TEXT_COLOR = 0xff4e9ad4;
 
-    public static final int MSG_IN_CONTACT_PHONE_TEXT_COLOR = 0xff2f3438;
+    public static final int MSG_IN_CONTACT_PHONE_TEXT_COLOR = 0xff464646;
     public static final int MSG_OUT_CONTACT_PHONE_TEXT_COLOR = 0xff464646;
     public static final int MSG_MEDIA_PROGRESS_COLOR = 0xffffffff;
     public static final int MSG_IN_AUDIO_PROGRESS_COLOR = 0xffffffff;
@@ -202,7 +233,7 @@ public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
     public static final int MSG_MEDIA_TIME_TEXT_COLOR = 0xffffffff;
     public static final int MSG_IN_TIME_TEXT_COLOR = 0xffa1aab3;
     public static final int MSG_OUT_TIME_TEXT_COLOR = 0xff464646;
-    public static final int MSG_OUT_TIME_SELECTED_TEXT_COLOR = 0xffffffff;
+    public static final int MSG_OUT_TIME_SELECTED_TEXT_COLOR = PRIMARY_COLOR;
 
     public static final int MSG_IN_AUDIO_PERFORMER_TEXT_COLOR = 0xff2f3438;
     public static final int MSG_OUT_AUDIO_PERFORMER_TEXT_COLOR = 0xff354234;
@@ -253,20 +284,20 @@ public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
     public static final int MSG_OUT_AUDIO_DURATION_SELECTED_TEXT_COLOR = 0xff464646;
     public static final int MSG_OUT_FILE_INFO_SELECTED_TEXT_COLOR = 0xff464646;
     public static final int MSG_OUT_FILE_INFO_TEXT_COLOR = 0xff464646;
-    public static final int MSG_IN_REPLY_MEDIA_MESSAGE_SELETED_TEXT_COLOR = 0xff9200AA;
+    public static final int MSG_IN_REPLY_MEDIA_MESSAGE_SELETED_TEXT_COLOR = PRIMARY_COLOR;
     public static final int MSG_OUT_VENUE_NAME_TEXT_COLOR = 0xff464646;
-    public static final int MSG_IN_TIME_SELECTED_TEXT_COLOR = 0xff9200AA;
-    public static final int MSG_IN_AUDIO_DURATION_SELECTED_TEXT_COLOR = 0xff9200AA;
-    public static final int MSG_IN_FILE_INFO_SELECTED_TEXT_COLOR = 0xff9200AA;
-    public static final int MSG_IN_FILE_BACKGROUND_COLOR = 0xff9200AA;
+    public static final int MSG_IN_TIME_SELECTED_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int MSG_IN_AUDIO_DURATION_SELECTED_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int MSG_IN_FILE_INFO_SELECTED_TEXT_COLOR = PRIMARY_COLOR;
+    public static final int MSG_IN_FILE_BACKGROUND_COLOR = PRIMARY_COLOR;
     public static final int MSG_OUT_FILE_BACKGROUND_COLOR = 0xff464646;
-    public static final int MSG_IN_FILE_BACKGROUND_SELECTED_COLOR = 0xff9200AA;
+    public static final int MSG_IN_FILE_BACKGROUND_SELECTED_COLOR = PRIMARY_COLOR;
     public static final int MSG_OUT_FILE_BACKGROUND_SELECTED_COLOR = 0xff464646;
     public static final int MSG_IN_VENUE_NAME_TEXT_COLOR = 0xff4e9ad4;
 
     public static final int MSG_IN_VENUE_INFO_TEXT_COLOR = 0xffa1aab3;
 
-    public static final int MSG_IN_VENUE_INFO_SELECTED_TEXT_COLOR = 0xff9200AA;
+    public static final int MSG_IN_VENUE_INFO_SELECTED_TEXT_COLOR = PRIMARY_COLOR;
     public static final int MSG_OUT_VENUE_INFO_SELECTED_TEXT_COLOR = 0xff65b05b;
     public static final int MSG_MEDIA_INFO_TEXT_COLOR = 0xffffffff;
 
@@ -280,9 +311,15 @@ public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
     // public static final int MSG_LINK_TEXT_COLOR = 0xffffffff;
     // public static final int MSG_TEXT_COLOR = 0xff000000;
     public static final int MSG_TEXT_COLOR = 0xff464646;
-    public static final int MSG_LINK_SELECT_BACKGROUND_COLOR = 0x33EFD7EE;
+
+    public static final int MSG_LINK_SELECT_BACKGROUND_COLOR = SECONDARY_COLOR;
+    /* Custom SELECT Background light */
+
     public static final int MSG_OUT_VENUE_INFO_TEXT_COLOR = 0xffffffff;
-    public static final int MSG_TEXT_SELECT_BACKGROUND_COLOR = 0x669200AA;
+
+
+    public static final int MSG_TEXT_SELECT_BACKGROUND_COLOR = SECONDARY_COLOR;
+    /* 0x669200AA */
 
     public static Drawable backgroundDrawableIn;
     public static Drawable backgroundDrawableInSelected;
@@ -343,16 +380,16 @@ public static final int MSG_IN_REPLY_LINE_COLOR = 0xff9200AA;
         if (backgroundDrawableIn == null) {
             backgroundDrawableIn = context.getResources().getDrawable(R.drawable.msg_in);
             backgroundDrawableInSelected = context.getResources().getDrawable(R.drawable.msg_in_selected);
-            backgroundDrawableOut = context.getResources().getDrawable(R.drawable.msg_out3);
-            backgroundDrawableOutSelected = context.getResources().getDrawable(R.drawable.msg_out_selected3);
+            backgroundDrawableOut = context.getResources().getDrawable(R.drawable.msg_out4); /* msg_out */
+            backgroundDrawableOutSelected = context.getResources().getDrawable(R.drawable.msg_out_selected3); /* msg_out_selected3 */
             backgroundMediaDrawableIn = context.getResources().getDrawable(R.drawable.msg_in_photo);
             backgroundMediaDrawableInSelected = context.getResources().getDrawable(R.drawable.msg_in_photo_selected);
-            backgroundMediaDrawableOut = context.getResources().getDrawable(R.drawable.msg_out_photo3);
-            backgroundMediaDrawableOutSelected = context.getResources().getDrawable(R.drawable.msg_out_photo_selected3);
+            backgroundMediaDrawableOut = context.getResources().getDrawable(R.drawable.msg_in_photo); /* msg_out_photo */
+            backgroundMediaDrawableOutSelected = context.getResources().getDrawable(R.drawable.msg_in_photo_selected); /* msg_out_photo_selected */
             /*Customized by Digant
             checkDrawable = context.getResources().getDrawable(R.drawable.msg_check2);
             */
-            checkDrawable = context.getResources().getDrawable(R.drawable.dialogs_check2);
+            checkDrawable = context.getResources().getDrawable(R.drawable.dialogs_check3);
 
             halfCheckDrawable = context.getResources().getDrawable(R.drawable.msg_halfcheck2);
             clockDrawable = context.getResources().getDrawable(R.drawable.msg_clock4);

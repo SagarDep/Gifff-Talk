@@ -17,6 +17,7 @@ import android.widget.TextView;
 import org.giffftalk.messenger.AndroidUtilities;
 import org.giffftalk.messenger.LocaleController;
 import org.giffftalk.ui.Components.LayoutHelper;
+import org.giffftalk.ui.ActionBar.Theme;
 
 public class HeaderCell extends FrameLayout {
 
@@ -31,7 +32,8 @@ public class HeaderCell extends FrameLayout {
        /* Customized by Digant
         textView.setTextColor(0xff3e90cf);
          */
-        textView.setTextColor(0xff9200AA);
+        textView.setTextColor(Theme.PRIMARY_COLOR);
+        /* Custom Top Header Background */
         textView.setGravity((LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT) | Gravity.CENTER_VERTICAL);
         addView(textView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT, (LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT) | Gravity.TOP, 17, 15, 17, 0));
     }
