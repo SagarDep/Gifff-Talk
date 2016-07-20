@@ -278,7 +278,7 @@
     <string name="NoRecent">No recent</string>
     <string name="Message">Message</string>
     <string name="TypeMessage">Message</string>
-    <string name="GifMessage">\u0040gif </string>
+    <string name="GifMessage" translatable="false">\u0040gif </string>
     <string name="ShareMyContactInfo">Share my contact</string>
     <string name="AddToContacts">Add to contacts</string>
     <string name="EncryptedPlaceholderTitleIncoming">%s invited you to join a secret chat.</string>
@@ -997,11 +997,11 @@
     <string name="Page5Title">Powerful</string>
     <string name="Page6Title">Cloud-Based</string>
     <string name="Page7Title">Private</string>
-    <string name="Page1Message">The world\'s <![CDATA[<b>fastest</b>]]> messaging app.<![CDATA[<br/>]]>It is <![CDATA[<b>free</b>]]> and <![CDATA[<b>secure</b>]]>.</string>
+    <string name="Page1Message">The most <![CDATA[<b>animated</b>]]> messaging app.<![CDATA[<br/>]]>It is <![CDATA[<b>free</b>]]> and <![CDATA[<b>secure</b>]]>.</string>
     <string name="Page2Message"><![CDATA[<b>Gif Chat</b>]]> delivers messages faster than<![CDATA[<br/>]]>any other application.</string>
     <string name="Page3Message"><![CDATA[<b>Gif Chat</b>]]> is free forever.<![CDATA[<br/>]]>No subscription fees.</string>
     <string name="Page4Message"><![CDATA[<b>Gif Chat</b>]]> keeps your messages safe<![CDATA[<br/>]]>from hacker attacks.</string>
-    <string name="Page5Message"><![CDATA[<b>Gif Chat</b>]]> has no limits on the size of<![CDATA[<br/>]]>your media and chats.</string>
+    <string name="Page5Message"><![CDATA[<b>Gif Chat</b>]]> takes less space on your phone,<![CDATA[<br/>]]>saves GIFs on cloud.</string>
     <string name="Page6Message"><![CDATA[<b>Gif Chat</b>]]> lets you access your messages<![CDATA[<br/>]]>from multiple devices.</string>
     <string name="Page7Message"><![CDATA[<b>Gif Chat</b>]]> messages are heavily encrypted<![CDATA[<br/>]]>and can self-destruct.</string>
     <string name="StartMessaging">Start Messaging</string>

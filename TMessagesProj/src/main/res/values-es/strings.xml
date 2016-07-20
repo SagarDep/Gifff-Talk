@@ -996,11 +996,11 @@
     <string name="Page5Title">Poderosa</string>
     <string name="Page6Title">Basada en la nube</string>
     <string name="Page7Title">Privada</string>
-    <string name="Page1Message">La aplicación de mensajería más<![CDATA[<br/><b>veloz</b>]]> del mundo. Es <![CDATA[<b>gratis</b>]]> y <![CDATA[<b>segura</b>]]>.</string>
+    <string name="Page1Message">La aplicación de mensajería más<![CDATA[<br/><b>animado</b>]]> del mundo. Es <![CDATA[<b>gratis</b>]]> y <![CDATA[<b>segura</b>]]>.</string>
     <string name="Page2Message"><![CDATA[<b>Gif Chat</b>]]> entrega mensajes más<![CDATA[<br/>]]>rápido que cualquier otra aplicación.</string>
     <string name="Page3Message"><![CDATA[<b>Gif Chat</b>]]> es gratis para siempre.<![CDATA[<br/>]]>Sin publicidad ni suscripciones.</string>
     <string name="Page4Message"><![CDATA[<b>Gif Chat</b>]]> mantiene tus mensajes<![CDATA[<br/>]]>a salvo del ataque de hackers.</string>
-    <string name="Page5Message"><![CDATA[<b>Gif Chat</b>]]> no tiene límites en<![CDATA[<br/>]]>el tamaño de tus chats y archivos.</string>
+    <string name="Page5Message"><![CDATA[<b>Gif Chat</b>]]> ocupa menos espacio en el teléfono<![CDATA[<br/>]]>ahorra GIF en la nube.</string>
     <string name="Page6Message"><![CDATA[<b>Gif Chat</b>]]> te permite acceder a tus<![CDATA[<br/>]]>mensajes desde múltiples dispositivos.</string>
     <string name="Page7Message"><![CDATA[<b>Gif Chat</b>]]> posee mensajes fuertemente<![CDATA[<br/>]]>cifrados y se pueden autodestruir.</string>
     <string name="StartMessaging">Empieza a conversar</string>

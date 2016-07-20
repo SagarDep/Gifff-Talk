@@ -69,7 +69,7 @@ public class IntroActivity extends Activity {
                     R.drawable.intro4,
                     R.drawable.intro3,
                     R.drawable.intro2,
-                    R.drawable.intro1
+                    R.drawable.intro8
             };
             titles = new int[]{
                     R.string.Page7Title,
@@ -91,7 +91,7 @@ public class IntroActivity extends Activity {
             };
         } else {
             icons = new int[]{
-                    R.drawable.intro1,
+                    R.drawable.intro8,
                     R.drawable.intro2,
                     R.drawable.intro3,
                     R.drawable.intro4,
@@ -289,7 +289,8 @@ public class IntroActivity extends Activity {
             for (int a = 0; a < count; a++) {
                 View child = bottomPages.getChildAt(a);
                 if (a == position) {
-                    child.setBackgroundColor(0xff2ca5e0);
+                  /* Customized by Digant  child.setBackgroundColor(0xff2ca5e0);   */
+                      child.setBackgroundColor(Theme.PRIMARY_COLOR);
                 } else {
                     child.setBackgroundColor(0xffbbbbbb);
                 }

@@ -19,7 +19,7 @@ public class BuildVars {
     public static String GCM_SENDER_ID = "760348033672";
     public static String SEND_LOGS_EMAIL = "digantjgtp@gmail.com";
     public static String BING_SEARCH_KEY = ""; //obtain your own KEY at https://www.bing.com/dev/en-us/dev-center
-    public static String FOURSQUARE_API_KEY = ""; //obtain your own KEY at https://developer.foursquare.com/
-    public static String FOURSQUARE_API_ID = ""; //obtain your own API_ID at https://developer.foursquare.com/
+    public static String FOURSQUARE_API_KEY = "K1VANCKJ0JI5Q1V0IHDIL1V0OIOV1D5ETC21SN5JNPJXFU0G"; //obtain your own KEY at https://developer.foursquare.com/
+    public static String FOURSQUARE_API_ID = "2UNQRFXBSGXU0VKBOCKX5DDZQJOYSZMKKODTASEIU0D3CUBS"; //obtain your own API_ID at https://developer.foursquare.com/
     public static String FOURSQUARE_API_VERSION = "20150326";
 }
